@@ -1,0 +1,55 @@
+{
+  "name": "task-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests --config config/jest.config.ts",
+    "dev": "ts-node-dev --respawn --transpile-only app.ts",
+    "start": "nodemon app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinothkumarkuppusamy/task-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinothkumarkuppusamy/task-management-system/issues"
+  },
+  "homepage": "https://github.com/vinothkumarkuppusamy/task-management-system#readme",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "axios": "^1.15.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1",
+    "path": "^0.12.7",
+    "pg": "^8.16.0",
+    "reflect-metadata": "^0.2.2",
+    "swagger-ui-express": "^5.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "^0.3.24",
+    "typescript": "^5.8.3",
+    "yamljs": "^0.3.0",
+    "zod": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.1.0",
+    "@types/pg": "^8.15.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/yamljs": "^0.2.34"
+  }
+}
