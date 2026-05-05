@@ -16,8 +16,9 @@ const server = http.createServer(app);
 
 // 🔐 CORS Configuration
 const allowedOrigins = [
+  "http://localhost:3000",
+  "http://52.66.132.71:3001",
   "http://localhost:5000",
-  "http://52.66.132.71:5001",
 ];
 
 const corsOptions: CorsOptions = {

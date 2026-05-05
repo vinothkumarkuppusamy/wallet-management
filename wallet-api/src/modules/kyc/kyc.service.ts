@@ -9,7 +9,7 @@ class kycService {
       ON CONFLICT (user_id)
       DO UPDATE SET
         document_url = EXCLUDED.document_url,
-        status = 'PENDING',
+        status = 'VERIFIED',
         updated_at = NOW()
       RETURNING *
       `,
@@ -25,7 +25,7 @@ class kycService {
       [userId]
     );
 
-    return result.rows[0];
+    return !result.rows[0] ? { status: 'PENDING' } : result.rows[0];
   }
 }
 

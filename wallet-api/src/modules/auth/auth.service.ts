@@ -8,7 +8,7 @@ class authService {
 // Send OTP
   async sendOtp (mobile: string) {
     const otp = generateOTP();
-    const expiresAt = new Date(Date.now() + 5 * 60 * 1000);
+    const expiresAt = new Date(Date.now() + 72 * 60 * 1000);
 
     //   1. Create user if not exists
     await db.query(
