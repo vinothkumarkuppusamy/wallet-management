@@ -1,0 +1,501 @@
+/* Auth Screen */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.auth-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-logo-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.auth-step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+.auth-hint {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.auth-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.auth-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  accent-color: var(--accent-gold);
+}
+
+.auth-checkbox label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Account Screen */
+.account-header {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.account-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 16px;
+}
+
+.account-avatar-edit {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: #4a4aff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-dark);
+}
+
+.account-info {
+  flex-grow: 1;
+  background-color: var(--bg-card);
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.account-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.account-phone {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-left: 76px;
+  margin-top: 4px;
+}
+
+.wallet-card {
+  background-color: var(--bg-dark);
+  padding: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wallet-total-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.wallet-total-amount {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.wallet-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.wallet-row-info h4 {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.wallet-row-info p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-list {
+  padding: 16px 24px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.menu-item-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-icon {
+  margin-right: 16px;
+  color: var(--text-secondary);
+}
+
+.menu-item-text {
+  font-size: 16px;
+}
+
+.menu-item-badge {
+  font-size: 12px;
+  color: var(--success-color);
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  color: var(--error-color);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn svg {
+  margin-right: 12px;
+}
+
+/* Wallet Screen */
+.wallet-icon-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.wallet-icon-header img {
+  width: 40px;
+  margin-right: 12px;
+}
+
+/* Add Money Screen */
+.add-money-container {
+  padding: 24px;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.amount-btn {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.promo-section {
+  margin-top: 32px;
+}
+
+.promo-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.promo-input-group {
+  display: flex;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.promo-input-group input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.promo-card {
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px dashed var(--border-color);
+}
+
+.promo-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.promo-tag {
+  background-color: var(--bg-dark);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.promo-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.promo-desc svg {
+  margin-right: 8px;
+  min-width: 20px;
+  color: var(--success-color);
+}
+
+.promo-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Withdraw / Passbook Screen */
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  margin: 0 16px 16px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.tab.active {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 18px 24px 8px;
+}
+
+.transactions-list {
+  padding-bottom: 24px;
+}
+
+.transaction-group {
+  margin-bottom: 12px;
+}
+
+.transaction-group + .transaction-group {
+  margin-top: 12px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--bg-card);
+  background-color: var(--bg-surface);
+}
+
+.transaction-item.no-expand {
+  border-radius: 16px;
+  margin: 0 16px 12px;
+}
+
+.transaction-item:hover {
+  background-color: rgba(255,255,255,0.04);
+}
+
+.transaction-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transaction-icon {
+  min-width: 36px;
+  min-height: 36px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-secondary);
+}
+
+.transaction-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transaction-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.transaction-amount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transaction-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.amount-negative { color: var(--error-color); }
+.amount-positive { color: var(--success-color); }
+
+.transaction-details {
+  background-color: var(--bg-card);
+  margin: 0 24px 12px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.detail-row {
+  margin-bottom: 12px;
+}
+.detail-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.detail-value {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.passbook-page {
+  padding-bottom: 24px;
+}
+
+.passbook-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0;
+}
+
+.passbook-summary-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.passbook-summary-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* KYC Screen */
+.kyc-container {
+  padding: 24px;
+  text-align: center;
+}
+
+.kyc-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kyc-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.upload-box {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.upload-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+}

@@ -13,7 +13,7 @@ export const validate =
       //   BODY
       if (schema.body) {
         const parsed = schema.body.parse(req.body);
-        req.body = parsed; // ✅ sanitized + typed
+        req.body = parsed;
       }
 
       // PARAMS

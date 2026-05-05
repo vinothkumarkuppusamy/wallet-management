@@ -17,7 +17,7 @@ class walletService {
     let walletId;
 
     if (walletRes.rows.length === 0) {
-      // ✅ Create wallet for first-time user
+      // Create wallet for first-time user
       const newWallet = await client.query(
         `INSERT INTO wallets (user_id)
          VALUES ($1)
@@ -66,7 +66,7 @@ class walletService {
 
       const walletId = walletRes.rows[0].id;
 
-      // 🔥 Get balance using aggregate
+      // Get balance using aggregate
       const balanceRes = await client.query(
         `
         SELECT COALESCE(SUM(
@@ -106,7 +106,7 @@ class walletService {
 
   //   Passbook (history + aggregate)
   async getPassbook(userId: number) {
-    // 🔥 Transactions
+    // Transactions
     const txRes = await db.query(
       `
       SELECT id, type, amount, created_at
@@ -117,7 +117,7 @@ class walletService {
       [userId]
     );
 
-    // 🔥 Aggregate summary
+    // Aggregate summary
     const summaryRes = await db.query(
       `
       SELECT 

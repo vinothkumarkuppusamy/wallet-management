@@ -5,7 +5,7 @@ import express from "express";
 import cors, { CorsOptions } from "cors";
 
 import { setupSwagger } from "./api/swagger";
-import { connectDB } from "./src/config/db.config"; // ✅ FIXED
+import { connectDB } from "./src/config/db.config"; 
 import indexRouter from "./src/routers/index.router";
 import { globalErrorHandler } from "./src/common/middlewares/error.middleware";
 
@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 const server = http.createServer(app);
 
-// 🔐 CORS Configuration
+// CORS Configuration
 const allowedOrigins = [
   "http://localhost:3000",
   "http://52.66.132.71:3001",
@@ -62,13 +62,13 @@ const PORT = process.env.PORT || 5000;
 
 (async () => {
   try {
-    await connectDB(); // ✅ await DB
+    await connectDB();
 
     server.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
+      console.log(`Server running on port ${PORT}`);
     });
   } catch (error) {
-    console.error("❌ Failed to start server:", error);
+    console.error("Failed to start server:", error);
     process.exit(1);
   }
 })();

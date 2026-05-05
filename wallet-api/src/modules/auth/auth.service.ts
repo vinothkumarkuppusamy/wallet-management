@@ -35,7 +35,7 @@ class authService {
       [mobile, otp, expiresAt]
     );
 
-    // 🔥 In real app → send SMS
+    //  In real app → send SMS
     console.log("OTP:", otp);
 
     return { message: "OTP sent successfully" };
